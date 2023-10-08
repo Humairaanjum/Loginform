@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="E:\HTML\bg.avif"><br><br><br><br><br><br><br><br><br><form action="">
+<h1 ><center><u>Login</u></center></h1>
+ <h4><center><b>Username:</b><input type="text" id="b1"></center></h4>
+ <h4><center><b>Password:</b><input type="password" id="b2"></center></h4>
+ <h4><center><a href="E:\HTML\fg.html">Forgot password?</a></center></h4>
+  <h4><center>  <button id="check">Login</button></center></h4>  
+  <h4><center>Not a member?<a href="E:\HTML\signup.html" >Signup</a></center></h4>
+ </form>
+</body><script>
+  document.getElementById("check").onclick = function () {
+        var userid = document.getElementById("b1").value;
+        var b1 = "Humaira";
+        var password = document.getElementById("b2").value;
+        var b2 = "1234";
+
+        if (userid == b1 && password == b2) {
+            alert("Form verified");
+        }
+        else {
+            alert("Try again");
+        }
+    }
+</script>
+</html>
